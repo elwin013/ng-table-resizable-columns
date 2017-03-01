@@ -155,7 +155,6 @@ angular.module('ngTableResizableColumns', [])
     return {
         restrict: 'C',
         priority: 999,
-        require: 'ngTable',
         link: function(scope, element, args, ngTable) {
             var data;
             scope.$watch('$data', function() {
